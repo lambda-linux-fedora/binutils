@@ -524,6 +524,9 @@ exit 0
 %endif # %{isnative}
 
 %changelog
+* Fri Aug 04 2017 Rajiv M Ranganath <rajiv.ranganath@atihita.com>
+- Add `i386pe` support
+
 * Mon Aug 15 2016 Nick Clifton <nickc@redhat.com> 2.26.1-1
 - Rebase on FSF binutils 2.26.1 release.
 - Retire: binutils-2.26-formatting.patch
