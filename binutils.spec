@@ -1,3 +1,5 @@
+%define _ll_buildid .1
+
 # rpmbuild parameters:
 # --define "binutils_target arm-linux-gnu" to create arm-linux-gnu-binutils.
 # --with debug: Build without optimizations and without splitting the debuginfo.
@@ -22,7 +24,7 @@
 Summary: A GNU collection of binary utilities
 Name: %{?cross}binutils%{?_with_debug:-debug}
 Version: 2.26.1
-Release: 1%{?dist}
+Release: 1%{?_ll_buildid}%{?dist}
 License: GPLv3+
 Group: Development/Tools
 URL: http://sources.redhat.com/binutils
