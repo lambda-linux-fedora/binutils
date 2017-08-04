@@ -263,6 +263,11 @@ case %{binutils_target} in  ppc64le*)
     ;;
 esac
 
+case %{binutils_target} in x86_64*|i?86*|arm*|aarch64*)
+  CARGS="$CARGS --enable-targets=x86_64-pep"
+  ;;
+esac
+
 %if 0%{?_with_debug:1}
 CFLAGS="$CFLAGS -O0 -ggdb2 -Wno-error -D_FORTIFY_SOURCE=0"
 %define enable_shared 0
